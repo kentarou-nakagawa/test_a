@@ -4,6 +4,8 @@ import "./App.css"
 
 function App() {
   const [text, setText] = useState('');
+  // textはreturnのまとめたやつ
+  // setTextは関数を用いたデータを指すみたいなイメージ
 
   const handleClick = () => {
     axios.get('https://catfact.ninja/fact')
@@ -14,6 +16,7 @@ function App() {
         console.error(error);
       });
   }
+
 
   return (
     <div >
