@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import "./App.css"
 
 function App() {
   const [text, setText] = useState('');
@@ -15,9 +16,9 @@ function App() {
   }
 
   return (
-    <div>
-      <p>{text}</p>
-      <button onClick={handleClick}>更新</button>
+    <div >
+      <p class = "text">{text}</p>
+      <p class = "button"><button onClick={handleClick}>更新</button></p>
     </div>
   );
 }
